@@ -6,7 +6,7 @@ class AppNavbar extends Component {
       <nav className="navbar navbar-expand-md navbar-dark bg-primary mb-4">
         <div className="container">
           <Link to="/" className="navbar-brand">
-            <i class="fas fa-handshake" /> Client Panel
+            <i className="fas fa-handshake" /> Client Panel
           </Link>
           <button
             className="navbar-toggler"
