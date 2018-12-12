@@ -114,7 +114,7 @@ class AddClient extends Component {
 }
 
 AddClient.propTypes = {
-  firestore: PropTypes.object.required
+  firestore: PropTypes.object.isRequired
 };
 
 export default firestoreConnect()(AddClient);
