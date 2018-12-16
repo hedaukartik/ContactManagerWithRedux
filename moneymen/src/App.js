@@ -10,6 +10,7 @@ import ClientDetails from "./components/clients/ClientDetails";
 import EditClient from "./components/clients/EditClient";
 import Login from "./components/auth/Login";
 import { UserIsAuthenticated, UserIsNotAuthenticated } from "./helpers/auth";
+import Settings from "./components/settings/Settings";
 
 class App extends Component {
   render() {
@@ -46,6 +47,11 @@ class App extends Component {
                   component={UserIsNotAuthenticated(Login)}
                 />
               </Switch>
+              <Route
+                exact
+                path="/settings"
+                component={UserIsAuthenticated(Settings)}
+              />
             </div>
           </div>
         </Router>
